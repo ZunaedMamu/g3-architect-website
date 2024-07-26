@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.displayflex{
+    display: flex;
+}
+.text_gray{
+    color:#424242 ;
+}
+.text_lgray{
+    color: #727272;
+}
+.primary_button{
+ background-color: #FF900E;  
+ color:white;
+ padding: 20px 26px; 
+ font-size: 1rem;
+ font-weight: 600;
+ border-radius: 8px;
+ border: 0;
+ }
+/* nav bar */
+.bg_color{
+    background-color: rgba(255, 144, 14,0.1) ;
+    margin-bottom: 4rem;
+
+}
+
+.brand_name{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_links{
+   font-weight: 500;
+}
+.navbar, .bannar{
+    max-width: 1440px;
+    margin: 0 auto;
+
+ }  
+.nav_item{
+margin-right: 30px;
+text-align: center;
+    
+}
+/* bannar */
+
+.bannar_inside{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 18px;
+
+
+}
+.bannar_img{
+    width: 100%;
+}
+.bannar_title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+/* main */
+@media screen and (max-width: 572px ) {
+  .nav_links, .navbar{
+    flex-direction: column;
+  }
+    
+}
