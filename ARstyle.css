@@ -9,6 +9,7 @@
 *{
     text-decoration: none;
     list-style: none;
+    /* max-width: 1440px; */
 }
 .displayflex{
     display: flex;
@@ -28,6 +29,13 @@
  border-radius: 8px;
  border: 0;
  }
+ main> section{
+    margin-top: 50px;
+ }
+ .section_heading{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
 /* nav bar */
 .bg_color{
     background-color: rgba(255, 144, 14,0.1) ;
@@ -74,9 +82,105 @@ text-align: center;
     font-size: 4rem;
 }
 /* main */
+.container1{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    align-items: center;
+ 
+
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-right: 50px;
+    width: 100%;
+}
+.teams_item{
+     width: 100%;
+}
+.container1text{
+    max-width: 530px;;
+}
+#quick_list{
+    font-weight: 500;
+}
+.feature{
+    color: #FF900E;
+}
+.container2{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.conatiner3{
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.pera{
+    border: 5px solid black;
+    padding: auto;
+    margin:10px ;
+}
+.container2img{
+    width: 100%;
+    margin-left: 30px
+}
+.fact_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.fact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-align: center;
+  
+    width: 240px;
+    height: 240px;  
+}
+.fact_text{
+    max-width: 550px;
+}
+.fact_num{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.fact_name{
+    margin-top:10px ;
+    font-size: 1rem;
+    font-weight: 500;
+}
 @media screen and (max-width: 572px ) {
   .nav_links, .navbar{
     flex-direction: column;
   }
+  .teams{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fact_items{
+      grid-template-columns: repeat(1,1fr);
+  
+}
     
+}
+@media screen and (min-width: 572px ) and (max-width: 992px){
+    .container1{
+        flex-direction: column;
+    } 
+    .container1text{
+        margin-top: 20px;
+        text-align: center;
+    }  
+    .fact_items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     }
 }
